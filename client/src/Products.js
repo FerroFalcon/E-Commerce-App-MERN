@@ -1,40 +1,72 @@
 const products = [
   {
     _id: 1,
-    productImg:
-      "https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_fresh-veggs-fnv_Storefront_m_251022_03.jpg",
-    productCategory: "Fruits & Vegetables",
+    productName: "Capsicum - Green (Loose)",
+    brand: "Fresho",
+    category: "Fruits and Vegetables",
+    price: 41,
+    quantity: "500g",
+    image:
+      "https://www.bigbasket.com/media/uploads/p/l/10000069_20-fresho-capsicum-green.jpg",
   },
   {
     _id: 2,
-    productImg:
-      "https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_dals-pulses-staplesStorefront_m_480_251022_03.jpg",
-    productCategory: "Foodgrains, Oil & Masala",
+    productName: "Carrot - Orange (Loose)",
+    brand: "Fresho",
+    category: "Fruits and Vegetables",
+    price: 18.75,
+    quantity: "250g",
+    image:
+      "https://www.bigbasket.com/media/uploads/p/l/10000071_14-fresho-carrot-orange.jpg",
   },
   {
     _id: 3,
-    productImg:
-      "https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_energy-beveragesStorefront_m_251022_275x184_05.jpg",
-    productCategory: "Beverages",
+    productName: "Idly & Dosa Batter",
+    brand: "iD Fresho",
+    category: "Snacks & Branded Foods",
+    price: 55,
+    quantity: "1kg",
+    image:
+      "https://www.bigbasket.com/media/uploads/p/l/271205_14-id-fresho-idly-dosa-batter.jpg",
   },
   {
     _id: 4,
-    productImg:
-      "https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_namkeens-snacksStorefront_m_480_251022_01.jpg",
-    productCategory: "Snacks & Branded Foods",
+    productName: "Rice/Akki - Raw, Sona Masoori, 12-17 Months Old",
+    brand: "BB Royal",
+    category: "Rice/Akki - Raw, Sona Masoori, 12-17 Months Old",
+    price: 514,
+    quantity: "10kg",
+    image:
+      "https://www.bigbasket.com/media/uploads/p/l/10000404_18-bb-royal-rice-raw-sona-masoori-12-17-months-old.jpg",
   },
   {
     _id: 5,
-    productImg:
-      "https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/6fe7b988-d217-4451-a8ff-6ddd2762f3d5/hp_beauty-Storefront_m_251022_560x378_01.jpg ",
-    productCategory: "Beauty & Hygiene",
+    productName: "Extra Virgin Olive Oil",
+    brand: "BORGES",
+    category: "Foodgrains, Oil & Masala",
+    price: 3200,
+    quantity: "5L",
+    image:
+      "https://www.bigbasket.com/media/uploads/p/l/40208261_1-borges-extra-virgin-olive-oil.jpg",
   },
   {
     _id: 6,
-    productImg:
-      "https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_dinnerware-GMStorefront(Till10th)_m_251022_04.jpg",
-    productCategory: " Kitchen, Garden & Pets",
+    productName: "Greek Yogurt - Natural",
+    brand: "Vaseline Intensive Care Deep Moisture Body Lotion",
+    category: "Beauty & Hygiene",
+    price: 225,
+    quantity: "44ml",
+    image:
+      "https://www.bigbasket.com/media/uploads/p/l/40118800_21-vaseline-intensive-care-deep-moisture-body-lotion.jpg",
   },
+  //   {
+  //     product: "",
+  //     brand: "",
+  //     category: "",
+  //     price: 0,
+  //     quantity: "",
+  //     image: "",
+  //   },
 ];
 
 export default products;
