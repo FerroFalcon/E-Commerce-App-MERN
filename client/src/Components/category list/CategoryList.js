@@ -4,7 +4,7 @@ import products from "../../Products";
 
 function CategoryList() {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center">
       {products.map((product) => (
         <CategoryItem
           id={product._id}
