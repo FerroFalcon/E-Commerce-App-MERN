@@ -18,6 +18,7 @@ function ProductCard() {
         <p>price</p>
         <p>quantity</p>
       </div>
+      <button>ADD</button>
     </div>
   );
 }

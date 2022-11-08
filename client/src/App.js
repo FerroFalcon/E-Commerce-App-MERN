@@ -1,5 +1,5 @@
 import "./App.css";
-import BannerHome from "./Components/banner/BannerHome";
+import Carousel from "./Components/banner/Carousel";
 import CategoryList from "./Components/category list/CategoryList.js";
 import Navbar from "./Components/navbar/Navbar";
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <CategoryList />
-      {/* <BannerHome /> */}
+      <Carousel />
     </div>
   );
 }
