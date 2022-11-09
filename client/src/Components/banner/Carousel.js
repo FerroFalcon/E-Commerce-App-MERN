@@ -23,6 +23,13 @@ function Carousel() {
               alt="Camera"
             />
           </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_Dry_FishBanner_1600x460_070922.jpg"
+              class="block w-full"
+              alt="Camera"
+            />
+          </div>
         </div>
       </div>
     </>

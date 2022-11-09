@@ -51,8 +51,8 @@ const products = [
   },
   {
     _id: 6,
-    productName: "Greek Yogurt - Natural",
-    brand: "Vaseline Intensive Care Deep Moisture Body Lotion",
+    productName: "Vaseline Intensive Care Deep Moisture Body Lotion",
+    brand: "Vaseline",
     category: "Beauty & Hygiene",
     price: 225,
     quantity: "44ml",
