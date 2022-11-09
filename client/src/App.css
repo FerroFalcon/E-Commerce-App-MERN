@@ -1,0 +1,11 @@
+/* .product_row {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+} */
+
+.product_row::-webkit-scrollbar {
+    display: none;
+}
+
+/* flex overflow-x-scroll overflow-y-hidden */
