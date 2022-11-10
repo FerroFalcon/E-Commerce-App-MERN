@@ -1,4 +1,4 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   AiOutlineUser,
   AiOutlineSearch,
@@ -7,6 +7,12 @@ import {
 } from "react-icons/ai";
 
 function Navbar() {
+  const navStyle = ({ isActive }) => {
+    return {
+      backgroundColor: isActive ? "blue" : "red",
+    };
+  };
+
   return (
     <div className="flex justify-around p-6 bg-emerald-100">
       {/* left nav logo*/}
@@ -22,11 +28,17 @@ function Navbar() {
 
       {/* cart side options right */}
       <div className="flex items-center ">
-        <AiOutlineShoppingCart className="text-2xl ml-4 cursor-pointer" />
+        <NavLink to="/cart" style={navStyle}>
+          <AiOutlineShoppingCart className="text-2xl ml-4 cursor-pointer" />
+        </NavLink>
 
-        <AiOutlineHeart className="text-2xl ml-4 cursor-pointer" />
+        <NavLink to="/wishlist" style={navStyle}>
+          <AiOutlineHeart className="text-2xl ml-4 cursor-pointer" />
+        </NavLink>
 
-        <AiOutlineUser className="text-2xl ml-4 cursor-pointer" />
+        <NavLink to="/userpage" style={navStyle}>
+          <AiOutlineUser className="text-2xl ml-4 cursor-pointer" />
+        </NavLink>
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import connection from "./database/mongodb.js";
 import cors from "cors";
 import bodyParser from "body-parser";
 import ProductApi from "./routes/ProductApi.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const PORT = 4000;
 const app = express();
