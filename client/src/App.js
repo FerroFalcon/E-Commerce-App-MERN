@@ -9,6 +9,9 @@ import Wishlist from "./pages/Wishlist.js";
 import Product from "./pages/Product.js";
 import UserPage from "./pages/UserPage.js";
 
+// authentication login register
+// redux
+
 function App() {
   return (
     <div className="App">

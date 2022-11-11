@@ -1,6 +1,6 @@
-import products from "../../Products.js";
+// import products from "../../Products.js";
 import ProductCard from "./ProductCard.js";
-function ProductRow() {
+function ProductRow({ products }) {
   return (
     <div className="product_row flex overflow-x-scroll overflow-y-hidden">
       {products.map((product) => (
