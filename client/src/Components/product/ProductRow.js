@@ -1,4 +1,3 @@
-// import products from "../../Products.js";
 import ProductCard from "./ProductCard.js";
 function ProductRow({ products }) {
   return (

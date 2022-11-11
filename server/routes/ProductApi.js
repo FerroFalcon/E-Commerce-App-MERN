@@ -5,8 +5,13 @@ const router = Router();
 
 router.get("/", async (req, res) => {
   const product = await Product.find({});
-  console.log(product);
   res.json({ data: product });
+});
+
+router.get("/:id", async (req, res) => {
+  const _id = req.params.id;
+  const productById = await Product.findById(_id);
+  res.status(201).send(productById);
 });
 
 router.post("/", async (req, res) => {

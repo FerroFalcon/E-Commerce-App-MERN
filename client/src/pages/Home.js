@@ -14,7 +14,7 @@ function Home() {
   async function fetchProducts() {
     const res = await fetch("http://localhost:4000/product");
     const { data } = await res.json();
-    console.log(data);
+    // console.log(data);
     setProducts(data);
   }
 
