@@ -1,10 +1,28 @@
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import ProductCard from "./ProductCard.js";
-function ProductRow({ products }) {
+import { getAllProducts } from "../../redux/actions/productActions";
+
+function ProductRow() {
+  const [totalProducts, setTotalProducts] = useState([]);
+  const allProductsList = useSelector((state) => state.productReducer);
+  const { products } = allProductsList;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllProducts());
+  }, []);
+
+  useEffect(() => {
+    setTotalProducts([products.data][0]);
+  }, [products]);
+
+  console.log(totalProducts);
+
   return (
     <div className="product_row flex overflow-x-scroll overflow-y-hidden">
-      {products.map((product) => (
+      {totalProducts.map((product) => (
         <ProductCard
-          key={product._id}
           productName={product.productName}
           brand={product.brand}
           price={product.price}

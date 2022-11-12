@@ -1,19 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
 import App from "./App.js";
-
-import store from "./store";
-import { Provider } from "react-redux";
-
+import {Provider} from 'react-redux'
+import store from "./redux/store";
 import "tw-elements";
-
+import axios from 'axios'; 
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>
+   
+      <Provider store={store}>
+        <App />
+      </Provider>
+     
+
 );
